@@ -16,7 +16,10 @@
 	%body
 		.container
 			.row.header
-				.col-xs-12.col-md-9.col-sm-6
+				.col-xs-12.col-md-2.col-sm-6
+					.photo
+						%img.img-responsive.img-thumbnail{src:'images/photo_profile.png'}
+				.col-xs-12.col-md-7.col-sm-6
 					.identity
 						%h3 Laurie Trichet
 						%h3.position iOS and Android Software Engineer
@@ -185,7 +188,12 @@
 					%table.table
 						%tr
 							%th 2007-2010
-							%td Master Degree - I.T. Engineer(link) with Ubiquitous and Mobile computing specialization(link)-Polytech’Nice-Sophia - Sophia-Antipolis, France
+							%td 
+								Master Degree - I.T. Engineer(
+								%a{href:'http://www.polytechnice.fr/en/informatique/page85.html', title:'Polytech Engineering school'} link
+								) with Ubiquitous and Mobile computing specialization(
+								%a{href:'http://informatique.polytechnice.fr/jahia/Jahia/informatique/parcoursSI5/IAM', title:'ubiquitous computing'} link
+								)-Polytech’Nice-Sophia - Sophia-Antipolis, France
 						%tr	
 							%th 2004-2007
 							%td 2 years technical degree in I.T.: Diplôme Universitaire de Technologie en Informatique - Aix en Provence, France
