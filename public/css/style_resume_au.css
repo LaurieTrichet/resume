@@ -1,0 +1,28 @@
+.date{
+	background-color: #F2F2F2;
+	padding: 7px;
+	margin-top:15px;
+}
+.header {
+	background-color: #F2F2F2;
+	padding: 7px;
+}
+.contact{
+	padding-top: 20px
+}
+.table{
+	font-size: 14px;
+}
+.position{
+	color: #2E64A6;
+}
+.employer{
+	color: #848484;
+	font-weight:lighter;
+}
+.spacer{
+	padding-top: 20px
+}
+.apps{
+	margin-top: 7px
+}

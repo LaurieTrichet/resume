@@ -1,0 +1,209 @@
+%html
+	%head
+		//allow touch zooming
+		%meta{name:'viewport', content:'width=device-width, initial-scale=1'}
+
+		//Latest compiled and minified CSS 
+		%link{rel:'stylesheet', href:'https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'}
+
+		//Optional theme
+		%link{rel:'stylesheet', href:'https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css'}
+
+		//style resume
+		%link{rel:'stylesheet', href:'css/style_resume_au.css'}
+	
+		%title Laurie Trichet - iOS and Android Software Engineer
+	%body
+		.container
+			.row.header
+				.col-xs-12.col-md-9.col-sm-6
+					.identity
+						%h3 Laurie Trichet
+						%h3.position iOS and Android Software Engineer
+						28 years old
+			
+				.col-xs-6.col-md-3
+					.contact 
+						.row
+							.col-xs-1.col-md-1
+								%img{src:'images/email.png'} 
+							.col-xs-9.col-md-9
+								%a{href:'mailto:#', title:'laurie.trichet@gmail.com'}laurie.trichet@gmail.com
+						.row.spacer
+							.col-xs-1.col-md-1
+								%img{src:'images/phone.png'} 
+							.col-xs-9.col-md-9
+								0422906769
+						.row.spacer
+							.col-xs-1.col-md-1
+								%img{src:'images/linked_in.png'} 
+							.col-xs-9.col-md-9
+								%a{href:'au.linkedin.com/pub/laurie-trichet/22/146/4b9/en', title:'link to linked in'} link to linked in
+			.row.spacer
+				.col-xs-2.col-md-2
+					.experience
+						%h4 Work Experience
+				.col-xs-10.col-md-10
+					.row
+						.col-xs-12.col-md-9
+							%h4.position iOS and Android Developer 
+							%h5.employer Self Employed - Paris, France
+						.col-xs-6.col-md-3
+							.date.text-center MAR 2014 – NOW
+					.row
+						.col-xs-12.col-md-12
+							.description 
+								%p Consulting and development of iOS and Android projects.
+								%span{class:'label label-default'}iOS 
+								%span{class:'label label-default'}Android 
+								%span{class:'label label-default'}UI experience 
+								%span{class:'label label-default'}Hudson 
+								%span{class:'label label-default'}SVN/Git
+					.row.spacer
+						.col-xs-12.col-md-9
+							%h4.position iOS and Android Developer 
+							%h5.employer Visuamobile - Paris, France
+						.col-xs-6.col-md-3
+							.date.text-center DEC 2011 – JAN 2014
+					.row
+						.col-xs-12.col-md-12
+							.description
+							%p Standalone and team development of iOS and Android applications in various fields such as press, medias and banking. Debug and addition of features to existing applications. Library management. Contributing to design UI interfaces. Lead developer on many projects: code review, technical choices, workload estimate. Use of Hudson, SVN/Git. Design of use cases and tests.
+							%span{class:'label label-default'}iOS 
+							%span{class:'label label-default'}Android 
+							%span{class:'label label-default'}UI experience 
+							%span{class:'label label-default'}Hudson 
+							%span{class:'label label-default'}SVN/Git
+
+						
+							.apps
+								%a{href:'https://itunes.apple.com/en/app/le-nouvel-observateur-actualite/id361705445', title:'Nouvelobs'} Nouvelobs,
+								%a{href:'https://play.google.com/store/apps/details?id=com.edf.edfetmoi', title:'EDFetMoi Android'} EDFetMoi Android,
+								%a{href:'https://itunes.apple.com/fr/app/edf-moi/id563799142?mt=8', title:'EDFetMoi iOS'} EDFetMoi iOS,
+								%a{href:'', title:'MyBoox iOS'} MyBoox iOS,
+								%a{href:'https://itunes.apple.com/fr/app/lcl-assurances/id577444162?mt=8', title:'LCL Assurance iOS'} LCL Assurance iOS,
+								%a{href:'https://play.google.com/store/apps/details?id=fr.lcl.pacifica.shootproof', title:'LCL Assurance Android'} LCL Assurance Android,
+								%a{href:'https://itunes.apple.com/fr/app/heureux-proprietaire/id425109599?mt=8', title:'Heureux Propriétaire'} Heureux Propriétaire,
+								%a{href:'https://play.google.com/store/apps/details?id=com.teleobs.androidapp', title:'TéléObs Android'} TéléObs Android,
+								%a{href:'https://itunes.apple.com/fr/app/teleobs-programme-tv-actu/id691254522?mt=8', title:'TéléObs iOS'} TéléObs iOS
+
+					.row.spacer
+						.col-xs-12.col-md-9
+							%h4.position iOS and JAVA Developer 
+							%h5.employer Harmonie-Technologie - Paris, France
+						.col-xs-6.col-md-3
+							.date.text-center SEPT 2010 – NOV 2011
+					.row
+						.col-xs-12.col-md-12
+							.description
+							%p Mobile technologies consultant for the Generali innovation unit. Prototyping B2B iPhone and iPad applications. Conception and development of an iOS framework used to build dynamic forms with multiple recursion levels. Programming custom modules for specific business needs (data synchronization with business software, photos, notes, location and email). Interaction with end user, collecting feedback to define application features and interfaces.
+							%span{class:'label label-default'}iOS 
+							%span{class:'label label-default'}CoreData 
+							%span{class:'label label-default'}Framework 
+							%span{class:'label label-default'}RestKit 
+							%span{class:'label label-default'}Assets 
+							%span{class:'label label-default'}Library
+
+							.apps
+								%a{href:'https://itunes.apple.com/fr/app/verifpno/id517207608?mt=8', title:'VerifPNO'} VerifPNO
+					.row
+						.col-xs-12.col-md-9
+						.col-xs-6.col-md-3
+							.date.text-center AUGUST 2011
+					.row
+						.col-xs-12.col-md-12
+							.description
+							%p Prototyping of a platform independent Facebook SSO solution using a web view. Development of REST services and Java server application to simulate the client’s account registration.  Creation of an iPhone application showing the process.
+							%span{class:'label label-default'}iOS 
+							%span{class:'label label-default'}JAVA 
+							%span{class:'label label-default'}Single sign on
+							%span{class:'label label-default'}Web Services REST  
+							%span{class:'label label-default'}Facebook SDK
+						
+					.row.spacer 
+						.col-xs-12.col-md-9
+							%h4.position iOS Developer 
+							%h5.employer Gerwin Software – Aix-en-Provence, France
+						.col-xs-6.col-md-3
+							.date.text-center MAR 2010 – SEPT 2010
+					.row
+						.col-xs-12.col-md-12
+							.description
+							%p Creation of an iPhone client-side application and a PHP server-side application for a massive multi-player game. Includes the use of location-based tools and the creation of augmented reality using trigonometric formulas to display points of interest located around the user on a map and on a video input stream.
+							%span{class:'label label-default'}iPhone 
+							%span{class:'label label-default'}GPS 
+							%span{class:'label label-default'}iPhone sensors: Camera, Compass, Accelerometer 
+							%span{class:'label label-default'}REST Architecture
+
+					.row.spacer 
+						.col-xs-12.col-md-9
+							%h4.position Android Developer 
+							%h5.employer Polytech’Nice Sophia - Sophia-Antipolis, France 
+						.col-xs-6.col-md-3
+							.date.text-center OCT 2009 – FEB 2010
+					.row
+						.col-xs-12.col-md-12
+							.description
+							%p Took part in a mobile application development competition for students (Mobi'life). Conception and development of an Android application using the Google translator’s Tools and the location-based sensor to translate a text from a picture taken with the phone’s camera.
+							%span{class:'label label-default'}Android 
+							%span{class:'label label-default'}Optical Character Recognition Library 
+							%span{class:'label label-default'}Google web services 
+							%span{class:'label label-default'}GPS
+
+			%hr
+			.row.spacer
+				.col-xs-2.col-md-2
+					.skills
+						%h4 Skills
+				.col-xs-10.col-md-10.spacer
+					%table.table 
+						%tr 
+							%th Mobile OS
+							%td iPhone OS, Android, Windows Mobile
+						%tr
+							%th Standard OS
+							%td Mac OS X, Windows XP, Vista, 7 Pro, UNIX
+						%tr	
+							%th Development
+							%td Objective-C, J2SE/J2EE/J2ME, C# Compact .Net, C/C++
+						%tr	
+							%th Databases
+							%td MySQL, MSSQL, PostgreSQL.
+						%tr	
+							%th Methods
+							%td UML, Merise
+						%tr	
+							%th Concepts
+							%td Design Patterns (MVC, PureMVC), Web Services ( Rest)
+			%hr
+			.row.spacer
+				.col-xs-2.col-md-2
+					.Education
+						%h4 Education
+
+				.col-xs-10.col-md-10.spacer
+					%table.table
+						%tr
+							%th 2007-2010
+							%td Master Degree - I.T. Engineer(link) with Ubiquitous and Mobile computing specialization(link)-Polytech’Nice-Sophia - Sophia-Antipolis, France
+						%tr	
+							%th 2004-2007
+							%td 2 years technical degree in I.T.: Diplôme Universitaire de Technologie en Informatique - Aix en Provence, France
+						%tr	
+							%th 2004
+							%td French high-school diploma: Baccalauréat scientifique. Marseille, France
+						%tr	
+							%th Languages
+							%td French - Mother tongue,  English - TOEIC 875/990,  Spanish, Japanese - basics
+			%hr
+			.row.spacer
+				.col-xs-2.col-md-2
+					.Other
+						%h4 Others
+				.col-xs-10.col-md-10.spacer
+					%span.spacer Archery, Traveling, online IT courses, Astronomy
+			.spacer
+		
+		//Latest compiled and minified JavaScript
+		%script{src:'https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'}
+
