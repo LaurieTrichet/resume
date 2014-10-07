@@ -9,6 +9,7 @@
     <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css' rel='stylesheet'>
     <!-- /style resume -->
     <link href='css/style_resume_au.css' rel='stylesheet'>
+    <link href='css/style_resume_au_print.css' media='print' rel='stylesheet'>
     <title>Laurie Trichet - iOS and Android Software Engineer</title>
   </head>
   <body>
@@ -30,41 +31,42 @@
           <div class='contact'>
             <div class='row'>
               <div class='col-xs-1 col-md-1'>
-                <img src='images/email.png'>
+                <img description='Email' src='images/email.png'>
               </div>
               <div class='col-xs-9 col-md-9'>
-                <a href='mailto:#' title='laurie.trichet@gmail.com'>laurie.trichet@gmail.com</a>
+                <a class='no-link' href='mailto:#' title='laurie.trichet@gmail.com'></a>
               </div>
             </div>
             <div class='row spacer'>
               <div class='col-xs-1 col-md-1'>
-                <img src='images/phone.png'>
+                <img description='Phone' src='images/phone.png'>
               </div>
               <div class='col-xs-9 col-md-9'>
-                0422906769
+                +61422906769
               </div>
             </div>
-            <div class='row spacer'>
+            <div class='row spacer hide-print'>
               <div class='col-xs-1 col-md-1'>
-                <img src='images/linked_in.png'>
+                <img description='linked in' src='images/linked_in.png'>
               </div>
               <div class='col-xs-9 col-md-9'>
-                <a href='http://au.linkedin.com/pub/laurie-trichet/22/146/4b9/en' title='link to linked in'>link to linked in</a>
+                <a href='http://au.linkedin.com/pub/laurie-trichet/22/146/4b9/en' title='link to linked in'></a>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <tr class='hide-screen'></tr>
       <div class='row spacer'>
         <div class='col-xs-2 col-md-2'>
           <div class='experience'>
-            <h4>Work Experience</h4>
+            <h4 class='first'>Work Experience</h4>
           </div>
         </div>
         <div class='col-xs-10 col-md-10'>
           <div class='row'>
             <div class='col-xs-12 col-md-9'>
-              <h4 class='position'>iOS and Android Developer</h4>
+              <h4 class='first position'>iOS and Android Developer</h4>
               <h5 class='employer'>Self Employed - Paris, France</h5>
             </div>
             <div class='col-xs-6 col-md-3'>
@@ -101,17 +103,17 @@
               <span class='label label-default'>UI experience</span>
               <span class='label label-default'>Hudson</span>
               <span class='label label-default'>SVN/Git</span>
-              <div class='apps'>
-                <a href='https://itunes.apple.com/en/app/le-nouvel-observateur-actualite/id361705445' title='Nouvelobs'>Nouvelobs,</a>
-                <a href='https://play.google.com/store/apps/details?id=com.edf.edfetmoi' title='EDFetMoi Android'>EDFetMoi Android,</a>
-                <a href='https://itunes.apple.com/fr/app/edf-moi/id563799142?mt=8' title='EDFetMoi iOS'>EDFetMoi iOS,</a>
-                <a href='' title='MyBoox iOS'>MyBoox iOS,</a>
-                <a href='https://itunes.apple.com/fr/app/lcl-assurances/id577444162?mt=8' title='LCL Assurance iOS'>LCL Assurance iOS,</a>
-                <a href='https://play.google.com/store/apps/details?id=fr.lcl.pacifica.shootproof' title='LCL Assurance Android'>LCL Assurance Android,</a>
-                <a href='https://itunes.apple.com/fr/app/heureux-proprietaire/id425109599?mt=8' title='Heureux Propriétaire'>Heureux Propriétaire,</a>
-                <a href='https://play.google.com/store/apps/details?id=com.teleobs.androidapp' title='TéléObs Android'>TéléObs Android,</a>
-                <a href='https://itunes.apple.com/fr/app/teleobs-programme-tv-actu/id691254522?mt=8' title='TéléObs iOS'>TéléObs iOS</a>
-              </div>
+              <blockquote class='apps'>
+                <a href='https://itunes.apple.com/en/app/le-nouvel-observateur-actualite/id361705445' title='Nouvelobs'></a>
+                <a href='https://play.google.com/store/apps/details?id=com.edf.edfetmoi' title='EDFetMoi Android'></a>
+                <a href='https://itunes.apple.com/fr/app/edf-moi/id563799142?mt=8' title='EDFetMoi iOS'></a>
+                <a href='https://itunes.apple.com/fr/app/myboox/id405535714?mt=8' title='MyBoox iOS'></a>
+                <a href='https://itunes.apple.com/fr/app/lcl-assurances/id577444162?mt=8' title='LCL Assurance iOS'></a>
+                <a href='https://play.google.com/store/apps/details?id=fr.lcl.pacifica.shootproof' title='LCL Assurance Android'></a>
+                <a href='https://itunes.apple.com/fr/app/heureux-proprietaire/id425109599?mt=8' title='Heureux Propriétaire'></a>
+                <a href='https://play.google.com/store/apps/details?id=com.teleobs.androidapp' title='TéléObs Android'></a>
+                <a class='last' href='https://itunes.apple.com/fr/app/teleobs-programme-tv-actu/id691254522?mt=8' title='TéléObs iOS'></a>
+              </blockquote>
             </div>
           </div>
           <div class='row spacer'>
@@ -133,9 +135,9 @@
               <span class='label label-default'>RestKit</span>
               <span class='label label-default'>Assets</span>
               <span class='label label-default'>Library</span>
-              <div class='apps'>
-                <a href='https://itunes.apple.com/fr/app/verifpno/id517207608?mt=8' title='VerifPNO'>VerifPNO</a>
-              </div>
+              <blockquote class='apps'>
+                <a class='last' href='https://itunes.apple.com/fr/app/verifpno/id517207608?mt=8' title='VerifPNO'></a>
+              </blockquote>
             </div>
           </div>
           <div class='row'>
@@ -195,7 +197,8 @@
           </div>
         </div>
       </div>
-      <hr>
+      <div class='new-page'></div>
+      <hr class='hide-print'>
       <div class='row spacer'>
         <div class='col-xs-2 col-md-2'>
           <div class='skills'>
@@ -244,9 +247,9 @@
               <th>2007-2010</th>
               <td>
                 Master Degree - I.T. Engineer(
-                <a href='http://www.polytechnice.fr/en/informatique/page85.html' title='Polytech Engineering school'>link</a>
+                <a href='http://www.polytechnice.fr/en/informatique/page85.html' title='Polytech Engineering school'></a>
                 ) with Ubiquitous and Mobile computing specialization(
-                <a href='http://informatique.polytechnice.fr/jahia/Jahia/informatique/parcoursSI5/IAM' title='ubiquitous computing'>link</a>
+                <a href='http://informatique.polytechnice.fr/jahia/Jahia/informatique/parcoursSI5/IAM' title='ubiquitous computing'></a>
                 )-Polytech’Nice-Sophia - Sophia-Antipolis, France
               </td>
             </tr>

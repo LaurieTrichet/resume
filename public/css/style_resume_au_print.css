@@ -1,0 +1,95 @@
+@page { 
+	size:A4;
+	margin: 1cm;
+}
+
+.container{
+	size: A4;
+	padding: 0.5cm;
+	padding-right: 1.5cm;
+}
+body {
+	font-size: 11pt;
+	margin-right: 1.5cm;
+}
+
+.new-page {
+  page-break-after: always; 
+}
+
+.hide-print{
+	visibility: hidden;
+}
+
+.hide-screen{
+	visibility: visible;
+}
+
+p {
+	margin-right: 0.5cm;
+}
+
+a {
+	color: #086A87;
+}	
+
+a::before{
+	content: attr(title);
+}
+
+a::after{
+	content: "";
+}
+
+.apps a:before{
+	content: attr(title) " ( " attr(href) " ) ";
+}
+
+.apps a:after{
+	content: ", ";
+}
+
+.apps a.last::after{
+	content: ". ";
+}
+
+a.no-link::before {
+	content: "" attr(title);
+}
+a.no-link::after {
+	content: "";
+}
+
+a[href]::before {
+    color: #086A87;
+}
+
+h3 {
+	font-size: 16pt;
+}
+
+h4.first {
+	font-size: 14pt;
+	margin-top: 0px;
+}
+
+h4 {
+	font-size: 14pt;
+	margin-top: 25px;
+}
+
+blockquote, ul {
+	margin: 0;
+	margin-right: 1cm;
+	border-right: none;
+	border-top: none;
+	border-bottom: none;
+}
+
+img {
+	visibility: visible;
+	display: block;
+}
+
+
+

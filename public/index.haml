@@ -12,6 +12,7 @@
 
 		//style resume
 		%link{rel:'stylesheet', href:'css/style_resume_au.css'}
+		%link{rel:'stylesheet', href:'css/style_resume_au_print.css', media:'print'}
 	
 		%title Laurie Trichet - iOS and Android Software Engineer
 	%body
@@ -30,27 +31,28 @@
 					.contact 
 						.row
 							.col-xs-1.col-md-1
-								%img{src:'images/email.png'} 
+								%img{src:'images/email.png', description:'Email'} 
 							.col-xs-9.col-md-9
-								%a{href:'mailto:#', title:'laurie.trichet@gmail.com'}laurie.trichet@gmail.com
+								%a.no-link{href:'mailto:#', title:'laurie.trichet@gmail.com'}
 						.row.spacer
 							.col-xs-1.col-md-1
-								%img{src:'images/phone.png'} 
+								%img{src:'images/phone.png', description:'Phone'} 
 							.col-xs-9.col-md-9
-								0422906769
-						.row.spacer
+								+61422906769
+						.row.spacer.hide-print
 							.col-xs-1.col-md-1
-								%img{src:'images/linked_in.png'} 
+								%img{src:'images/linked_in.png', description:'linked in'} 
 							.col-xs-9.col-md-9
-								%a{href:'http://au.linkedin.com/pub/laurie-trichet/22/146/4b9/en', title:'link to linked in'} link to linked in
+								%a{href:'http://au.linkedin.com/pub/laurie-trichet/22/146/4b9/en', title:'link to linked in'}
+			%tr.hide-screen
 			.row.spacer
 				.col-xs-2.col-md-2
 					.experience
-						%h4 Work Experience
+						%h4.first Work Experience
 				.col-xs-10.col-md-10
 					.row
 						.col-xs-12.col-md-9
-							%h4.position iOS and Android Developer 
+							%h4.first.position iOS and Android Developer 
 							%h5.employer Self Employed - Paris, France
 						.col-xs-6.col-md-3
 							.date.text-center MAR 2014 – NOW
@@ -79,17 +81,17 @@
 							%span{class:'label label-default'}Hudson 
 							%span{class:'label label-default'}SVN/Git
 
-						
-							.apps
-								%a{href:'https://itunes.apple.com/en/app/le-nouvel-observateur-actualite/id361705445', title:'Nouvelobs'} Nouvelobs,
-								%a{href:'https://play.google.com/store/apps/details?id=com.edf.edfetmoi', title:'EDFetMoi Android'} EDFetMoi Android,
-								%a{href:'https://itunes.apple.com/fr/app/edf-moi/id563799142?mt=8', title:'EDFetMoi iOS'} EDFetMoi iOS,
-								%a{href:'', title:'MyBoox iOS'} MyBoox iOS,
-								%a{href:'https://itunes.apple.com/fr/app/lcl-assurances/id577444162?mt=8', title:'LCL Assurance iOS'} LCL Assurance iOS,
-								%a{href:'https://play.google.com/store/apps/details?id=fr.lcl.pacifica.shootproof', title:'LCL Assurance Android'} LCL Assurance Android,
-								%a{href:'https://itunes.apple.com/fr/app/heureux-proprietaire/id425109599?mt=8', title:'Heureux Propriétaire'} Heureux Propriétaire,
-								%a{href:'https://play.google.com/store/apps/details?id=com.teleobs.androidapp', title:'TéléObs Android'} TéléObs Android,
-								%a{href:'https://itunes.apple.com/fr/app/teleobs-programme-tv-actu/id691254522?mt=8', title:'TéléObs iOS'} TéléObs iOS
+							
+							%blockquote.apps
+								%a{href:'https://itunes.apple.com/en/app/le-nouvel-observateur-actualite/id361705445', title:'Nouvelobs'} 
+								%a{href:'https://play.google.com/store/apps/details?id=com.edf.edfetmoi', title:'EDFetMoi Android'} 
+								%a{href:'https://itunes.apple.com/fr/app/edf-moi/id563799142?mt=8', title:'EDFetMoi iOS'} 
+								%a{href:'https://itunes.apple.com/fr/app/myboox/id405535714?mt=8', title:'MyBoox iOS'} 
+								%a{href:'https://itunes.apple.com/fr/app/lcl-assurances/id577444162?mt=8', title:'LCL Assurance iOS'} 
+								%a{href:'https://play.google.com/store/apps/details?id=fr.lcl.pacifica.shootproof', title:'LCL Assurance Android'} 
+								%a{href:'https://itunes.apple.com/fr/app/heureux-proprietaire/id425109599?mt=8', title:'Heureux Propriétaire'} 
+								%a{href:'https://play.google.com/store/apps/details?id=com.teleobs.androidapp', title:'TéléObs Android'} 
+								%a.last{href:'https://itunes.apple.com/fr/app/teleobs-programme-tv-actu/id691254522?mt=8', title:'TéléObs iOS'} 
 
 					.row.spacer
 						.col-xs-12.col-md-9
@@ -108,8 +110,8 @@
 							%span{class:'label label-default'}Assets 
 							%span{class:'label label-default'}Library
 
-							.apps
-								%a{href:'https://itunes.apple.com/fr/app/verifpno/id517207608?mt=8', title:'VerifPNO'} VerifPNO
+							%blockquote.apps
+								%a.last{href:'https://itunes.apple.com/fr/app/verifpno/id517207608?mt=8', title:'VerifPNO'}
 					.row
 						.col-xs-12.col-md-9
 						.col-xs-6.col-md-3
@@ -153,8 +155,8 @@
 							%span{class:'label label-default'}Optical Character Recognition Library 
 							%span{class:'label label-default'}Google web services 
 							%span{class:'label label-default'}GPS
-
-			%hr
+			.new-page
+			%hr.hide-print
 			.row.spacer
 				.col-xs-2.col-md-2
 					.skills
@@ -191,9 +193,9 @@
 							%th 2007-2010
 							%td 
 								Master Degree - I.T. Engineer(
-								%a{href:'http://www.polytechnice.fr/en/informatique/page85.html', title:'Polytech Engineering school'} link
+								%a{href:'http://www.polytechnice.fr/en/informatique/page85.html', title:'Polytech Engineering school'}
 								) with Ubiquitous and Mobile computing specialization(
-								%a{href:'http://informatique.polytechnice.fr/jahia/Jahia/informatique/parcoursSI5/IAM', title:'ubiquitous computing'} link
+								%a{href:'http://informatique.polytechnice.fr/jahia/Jahia/informatique/parcoursSI5/IAM', title:'ubiquitous computing'}
 								)-Polytech’Nice-Sophia - Sophia-Antipolis, France
 						%tr	
 							%th 2004-2007

@@ -24,5 +24,22 @@
 	padding-top: 20px
 }
 .apps{
-	margin-top: 7px
+	margin-top: 7px;
+	font-size: 14px;
+}
+
+a::before{
+	content: attr(title);
+}
+
+.apps a:after{
+	content: ", ";
+}
+
+.apps a.last::after{
+	content: ". ";
+}
+
+.hide-screen{
+	visibility: hidden;
 }
