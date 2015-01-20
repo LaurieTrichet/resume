@@ -43,3 +43,7 @@ a::before{
 .hide-screen{
 	visibility: hidden;
 }
+.footer{
+	color: #848484;
+	font-weight:lighter;
+}
